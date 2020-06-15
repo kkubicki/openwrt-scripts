@@ -1,0 +1,2 @@
+# pingtest
+OpenWrt ping test
