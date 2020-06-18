@@ -10,7 +10,7 @@ do
 done
 
 date >> /mnt/share/restarts.txt
-sleep 1 && umount /mnt/share/
+/etc/init.d/vnstat_backup backup && sleep 1 && umount /mnt/share/
 
 r=$((0x$(cut -c1-1 /proc/sys/kernel/random/uuid) % 2))
 if [ $r -eq 1 ]; then
