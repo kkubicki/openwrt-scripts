@@ -2,8 +2,7 @@
 tries=0
 while [[ $tries -lt 5 ]]
 do
-	sleep 2
-	if /bin/ping -c1 -w5 8.8.8.8 > /dev/null
+	if /bin/ping -c1 -w10 8.8.8.8 > /dev/null
 	then
 		exit 0
 	fi
